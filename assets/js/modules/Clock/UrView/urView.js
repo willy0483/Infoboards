@@ -6,13 +6,23 @@ export default function buildUrView(now, day, hours, minutes, date, myMonths) {
   console.log(now);
 
   let myHtml = `
-    <section>
-      <img src="assets/images/Svg/Clock_Icon.svg" alt="Clock_Icon" />
-      <div class="timeDateContainer">
-        <header class="time"><h2>${hours}:${minutes}</h2></header>
-        <p class="date">${day} ${date}. ${myMonths}</p>
+  <div class="background-container">
+    <img src="assets/images/TrainBackgroundImage.jpg" alt="Background Image"> 
+    <div id="siteContent">
+      <div id="tidContainer">
+        <div id="tidContent">
+          <img id="clockImage" src="assets/images/Svg/Clock_Icon.svg" alt="Clock_Icon" />
+            <div class="timeDateContainer">
+              <header class="time"><h2>${hours}:${minutes}</h2></header>
+              <p class="date">${day} ${date}. ${myMonths}</p>
+            </div>
+        </div>
       </div>
-    </section>
+    
+    
+    
+    </div>
+  </div>
   `;
 
   clock.innerHTML = myHtml;
