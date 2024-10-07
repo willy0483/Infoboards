@@ -1,6 +1,6 @@
 import { myApp } from "../../../main.js";
 
-const clock = document.createElement("div");
+export const clock = document.createElement("div");
 clock.classList.add("clock");
 
 export default function buildUrView(
@@ -32,5 +32,4 @@ export default function buildUrView(
   `;
 
   clock.innerHTML = myHtml;
-  myApp.appendChild(clock);
 }

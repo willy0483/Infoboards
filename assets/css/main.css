@@ -1,4 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.clock fieldset {
+  text-align: center;
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.clock fieldset header h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 3rem;
+}
+.clock fieldset .timeDateContainer {
+  padding: 0.5rem 2rem 2.5rem 2rem;
+}
+.clock fieldset .timeDateContainer p {
+  color: #fff200;
+  margin: 0rem;
+}
+.clock fieldset legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.clock fieldset legend img {
+  width: 50px;
+  height: 50px;
+}
+
+.busTider {
+  display: flex;
+  color: #000000;
+  margin: 0.2rem 0;
+}
+.busTider .stoppeSted {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 0 0 1rem;
+  border-radius: 8px 0 0 8px;
+}
+.busTider .anKomst {
+  text-align: center;
+  width: 4rem;
+  background-color: #fff200;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.bus legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.bus legend img {
+  width: 50px;
+  height: 50px;
+}
+.bus fieldset {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+}
+.bus fieldset header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff200;
+  color: #000000;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+.bus fieldset header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.bus .whats-next {
+  display: flex;
+  justify-content: center;
+}
+.bus .whats-next p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.bus .whats-next .afgange {
+  color: #fff200;
+}
+.bus .stoppested-ankomst {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.3rem;
+}
+.bus .stoppested-ankomst p {
+  margin-bottom: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,48 +106,18 @@ body {
   background-color: #000000;
 }
 
-.background-container {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-.background-container img {
-  max-width: 100%;
-  opacity: 0.6;
-  height: auto;
-}
-
-#siteContent {
-  overflow-y: hidden;
-  position: absolute;
-  border: 2px solid lime;
-  width: 85%;
-  height: 85%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#tidContainer {
-  border: 2px solid red;
-}
-
-#tidContent {
-  border: 2px solid #fff200;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
-  width: 360px;
-  height: 260px;
+.background {
   position: relative;
 }
-
-#clockImage {
-  border: 2px solid red;
-  position: absolute;
-  top: -10rem;
-  left: 0;
+.background > img {
+  filter: brightness(50%);
   width: 100%;
-  scale: 0.27;
+  display: block;
+}
+
+#App {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */

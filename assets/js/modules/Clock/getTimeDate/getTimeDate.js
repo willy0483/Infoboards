@@ -39,5 +39,4 @@ export default function timeDate() {
 
 function updateTimeDate(now, day, hours, minutes, date, myMonths, year) {
   bulidUrView(now, day, hours, minutes, date, myMonths, year);
-  setInterval(timeDate, 10000);
 }
