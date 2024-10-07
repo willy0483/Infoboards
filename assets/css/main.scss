@@ -1,2 +1,2 @@
-@import 'variables';
-
+@use "./variables" as variable;
+@use "../js/modules/Clock/UrView/urView" as urView;

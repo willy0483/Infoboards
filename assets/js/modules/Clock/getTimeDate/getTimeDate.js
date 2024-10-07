@@ -2,40 +2,42 @@ import bulidUrView from "../UrView/urView.js";
 // Export the function
 export default function timeDate() {
   const weekday = [
-    "Søndag",
-    "Mandag",
-    "Tirsdag",
-    "Onsdag",
-    "Torsdag",
-    "Fredag",
-    "Lørdag",
+    "SØNDAG",
+    "MANDAG",
+    "TIRSDAG",
+    "ONSDAG",
+    "TORSDAG",
+    "FREDAG",
+    "LØRDAG",
   ];
+
   const now = new Date();
   const day = weekday[now.getDay()];
-  const hours = now.getHours();
-  const minutes = now.getMinutes();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
   const date = now.getDate();
 
   const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC",
   ];
   const myMonths = months[now.getMonth()];
+  const year = now.getFullYear();
 
-  updateTimeDate(now, day, hours, minutes, date, myMonths);
+  updateTimeDate(now, day, hours, minutes, date, myMonths, year);
 }
 
-function updateTimeDate(now, day, hours, minutes, date, myMonths) {
-  bulidUrView(now, day, hours, minutes, date, myMonths);
+function updateTimeDate(now, day, hours, minutes, date, myMonths, year) {
+  bulidUrView(now, day, hours, minutes, date, myMonths, year);
   setInterval(timeDate, 10000);
 }

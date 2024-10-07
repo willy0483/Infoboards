@@ -1,0 +1,35 @@
+@use "../../../../css/variables" as variable;
+
+.clock {
+
+    fieldset {
+        text-align: center;
+        border: 2px solid variable.$yellow;
+        border-radius: 8px;
+        width: fit-content; 
+        header{
+            h2{
+                // color: variable.$white;
+                margin: 0;
+                font-size: 3rem;
+            }
+        }
+        .timeDateContainer{
+            padding: 1rem 2rem 2.5rem 2rem;   
+            p{
+                color: variable.$yellow;
+                margin: 0rem
+            }
+        }
+
+
+        legend {
+            margin: auto;
+            padding: 0 0.3rem;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
