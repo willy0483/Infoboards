@@ -1,28 +1,34 @@
 import { myApp } from "../../../main.js";
 
 const clock = document.createElement("div");
+clock.classList.add("clock");
 
-export default function buildUrView(now, day, hours, minutes, date, myMonths) {
+export default function buildUrView(
+  now,
+  day,
+  hours,
+  minutes,
+  date,
+  myMonths,
+  year
+) {
   console.log(now);
 
   let myHtml = `
-  <div class="background-container">
-    <img src="assets/images/TrainBackgroundImage.jpg" alt="Background Image"> 
-    <div id="siteContent">
-      <div id="tidContainer">
-        <div id="tidContent">
-          <img id="clockImage" src="assets/images/Svg/Clock_Icon.svg" alt="Clock_Icon" />
-            <div class="timeDateContainer">
-              <header class="time"><h2>${hours}:${minutes}</h2></header>
-              <p class="date">${day} ${date}. ${myMonths}</p>
+    <fieldset>
+        <legend>
+            <img src="assets/images/Svg/Clock_Icon.svg" alt="Clock Icon" />
+        </legend>
+        <section class="timeDateContainer">
+            <div>
+                <header class="time">
+                    <h2>${hours}:${minutes}</h2>
+                </header>
+                <p class="date">${day} ${date}. ${myMonths} ${year}</p>
             </div>
-        </div>
-      </div>
-    
-    
-    
-    </div>
-  </div>
+        </section>
+    </fieldset>
+
   `;
 
   clock.innerHTML = myHtml;
