@@ -11,6 +11,7 @@ export default async function getBusData() {
     })
     .catch((error) => {
       console.error(error);
+      getBusData();
       return error;
     });
 }

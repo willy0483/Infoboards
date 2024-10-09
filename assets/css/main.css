@@ -199,6 +199,7 @@
   grid-template-columns: 1fr 1fr 1fr 1.5fr 0.5fr;
   padding: 0 0.5rem;
   justify-content: space-between;
+  border-radius: 8px;
 }
 .activityContainer .activityWrapper {
   background-color: #ffffff;
