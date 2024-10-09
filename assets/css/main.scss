@@ -1,6 +1,7 @@
 @use "./variables" as variable;
 @use "../js/modules/Clock/UrView/urView" as urView;
 @use "../js/modules/BusTider/busTiderView/busTiderView" as busTiderView;
+@use "../js/modules/Food/FoodView/foodView" as foodView;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -31,7 +32,14 @@ body {
 }
 #App{
     position: absolute;
-    top:45%;
+    top:40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.busClock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
