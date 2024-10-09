@@ -26,20 +26,22 @@ body {
 .background{
     position: relative;
     >img{
-        filter: brightness(50%);    
+        filter: brightness(25%);    
         width: 100%;
-        display: block;
+        display: block; 
     }
 }
 #App{
     position: absolute;
-    top:45%;
+    top:43%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    gap: 0.5rem;
 }
 
 .busClock{
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

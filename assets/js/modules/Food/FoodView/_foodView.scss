@@ -55,3 +55,38 @@
         border-radius: 8px;
     }
 }
+
+
+
+.food-item.highlight {
+    background-color: yellow;
+    font-weight: bold; 
+    animation: bounce 6s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 100% { 
+        transform: translateY(0); 
+    }
+    30% { 
+        transform: translateY(-10px);
+    }
+    50% { 
+        transform: translateY(0);
+    }
+    60% { 
+        transform: translateY(-5px);
+    }
+    80% { 
+        transform: translateY(0); 
+    }
+    90% { 
+        transform: translateY(-2px);
+    }
+    95% { 
+        transform: translateY(0); 
+    }
+}
+
+
+

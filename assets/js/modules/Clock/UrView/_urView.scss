@@ -1,7 +1,10 @@
 @use "../../../../css/variables" as variable;
 
 .clock {
+    display: flex;
+    justify-content: center;
     fieldset {
+        width: 100%;
         text-align: center;
         border: 2px solid variable.$yellow;
         border-radius: 8px;

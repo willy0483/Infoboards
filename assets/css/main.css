@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.clock {
+  display: flex;
+  justify-content: center;
+}
 .clock fieldset {
+  width: 100%;
   text-align: center;
   border: 2px solid #fff200;
   border-radius: 8px;
@@ -148,12 +153,41 @@
   border-radius: 8px;
 }
 
+.food-item.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  animation: bounce 6s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+  95% {
+    transform: translateY(0);
+  }
+}
 .activityContainer {
   color: white;
   gap: 4px;
 }
 .activityContainer section {
-  width: 700px;
+  width: 620px;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -162,7 +196,7 @@
 .activityContainer section div {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 0.5fr;
   padding: 0 0.5rem;
   justify-content: space-between;
 }
@@ -230,20 +264,22 @@ body {
   position: relative;
 }
 .background > img {
-  filter: brightness(50%);
+  filter: brightness(25%);
   width: 100%;
   display: block;
 }
 
 #App {
   position: absolute;
-  top: 45%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  gap: 0.5rem;
 }
 
 .busClock {
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

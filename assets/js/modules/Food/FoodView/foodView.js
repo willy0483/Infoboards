@@ -19,7 +19,6 @@ export default function buildFoodView(foodData) {
           <p>DEN VARME</p>
           <p>UGE ${foodData.Week}</p>
           </section>
-          </section>
           <section class="food-list"></section> 
         </fieldset>
     `;
@@ -28,9 +27,18 @@ export default function buildFoodView(foodData) {
 
   const foodListContainer = foodContainer.querySelector(".food-list");
 
+  const today = new Date();
+  const options = { weekday: "long" };
+  const todayName = today.toLocaleDateString("da-DK", options);
+
   foodData.Days.forEach((food) => {
+    let className = "food-item";
+    if (food.DayName.toLowerCase() === todayName.toLowerCase()) {
+      className += " highlight";
+    }
+
     const foodHtml = `
-        <section class="food-item">
+        <section class="${className}">
           <div class="day"><p>${food.DayName}</p></div>
           <div class="name"><p>${food.Dish.replace("- kr. 35,00", "").replace(
             "og",
@@ -38,7 +46,7 @@ export default function buildFoodView(foodData) {
           )}</p></div>
         </section>
       `;
-    // Append each food item to the food container
+
     foodListContainer.innerHTML += foodHtml;
   });
 }

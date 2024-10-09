@@ -44,8 +44,8 @@ export default function getData() {
     console.log(data);
     buildFoodView(data);
   });
-  setInterval(getFood, 3600000);
+  setInterval(getFood, 7200000);
 
   buildActivty();
-  setInterval(buildActivty, 3600000);
+  setInterval(buildActivty, 1800000);
 }
