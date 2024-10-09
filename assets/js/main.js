@@ -10,15 +10,21 @@ const busClock = document.createElement("div");
 busClock.classList.add("busClock");
 busClock.append(busTiderContainer);
 busClock.appendChild(clock);
+myApp.appendChild(busClock);
 
 import getFood from "./modules/Food/getFood/getFood.js";
 import buildFoodView from "./modules/Food/FoodView/foodView.js";
 import { foodContainer } from "./modules/Food/FoodView/foodView.js";
+foodContainer.classList.add("foodContainer");
 const mainfoodContainer = document.createElement("div");
 mainfoodContainer.appendChild(foodContainer);
-
-myApp.appendChild(busClock);
 myApp.appendChild(mainfoodContainer);
+
+const activityContainer = document.createElement("section");
+activityContainer.id = "activityContainer";
+myApp.appendChild(activityContainer);
+
+import { buildActivty } from "./modules/Activity/activtyController/activtyController.js";
 
 getData();
 
@@ -39,4 +45,7 @@ export default function getData() {
     buildFoodView(data);
   });
   setInterval(getFood, 3600000);
+
+  buildActivty();
+  setInterval(buildActivty, 3600000);
 }

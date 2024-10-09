@@ -148,6 +148,71 @@
   border-radius: 8px;
 }
 
+.activityContainer {
+  color: white;
+  gap: 4px;
+}
+.activityContainer section {
+  width: 700px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.activityContainer section div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+}
+.activityContainer .activityWrapper {
+  background-color: #ffffff;
+  margin: 0 1rem;
+  color: #000000;
+}
+.activityContainer .activityWrapper p {
+  line-height: 10px;
+}
+.activityContainer legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.activityContainer legend img {
+  width: 50px;
+  height: 50px;
+}
+.activityContainer fieldset {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  padding: 0;
+}
+.activityContainer fieldset header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+.activityContainer fieldset header h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.6rem;
+}
+
+.fieldsetSection {
+  background-color: #005543;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.activityTitle p {
+  color: #D9D9D9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -172,7 +237,7 @@ body {
 
 #App {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;

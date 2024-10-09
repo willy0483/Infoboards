@@ -2,6 +2,7 @@
 @use "../js/modules/Clock/UrView/urView" as urView;
 @use "../js/modules/BusTider/busTiderView/busTiderView" as busTiderView;
 @use "../js/modules/Food/FoodView/foodView" as foodView;
+@use "../js/modules/Activity/activtyView/activtyView" as activtyView;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -32,7 +33,7 @@ body {
 }
 #App{
     position: absolute;
-    top:40%;
+    top:45%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
