@@ -1,1 +1,290 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.clock {
+  display: flex;
+  justify-content: center;
+}
+.clock fieldset {
+  width: 100%;
+  text-align: center;
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.clock fieldset header h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 3rem;
+}
+.clock fieldset .timeDateContainer {
+  padding: 0.5rem 2rem 2.5rem 2rem;
+}
+.clock fieldset .timeDateContainer p {
+  color: #fff200;
+  margin: 0rem;
+}
+.clock fieldset legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.clock fieldset legend img {
+  width: 50px;
+  height: 50px;
+}
+
+.busTider {
+  display: flex;
+  color: #000000;
+  margin: 0.2rem 0;
+}
+.busTider .stoppeSted {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 0 0 1rem;
+  border-radius: 8px 0 0 8px;
+}
+.busTider .anKomst {
+  text-align: center;
+  width: 4rem;
+  background-color: #fff200;
+  border-radius: 0px 8px 8px 0px;
+  padding-right: 0.2rem;
+}
+
+.bus legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.bus legend img {
+  width: 50px;
+  height: 50px;
+}
+.bus fieldset {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+}
+.bus fieldset header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff200;
+  color: #000000;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+.bus fieldset header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.bus .busContainer p {
+  margin: 0.4rem 0;
+}
+.bus .whats-next {
+  display: flex;
+  justify-content: center;
+}
+.bus .whats-next p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.bus .whats-next .afgange {
+  color: #fff200;
+}
+.bus .stoppested-ankomst {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.3rem;
+}
+.bus .stoppested-ankomst p {
+  margin-bottom: 0;
+}
+
+.food {
+  height: 100%;
+  width: 450px;
+}
+.food legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.food legend img {
+  width: 80px;
+  height: 50px;
+}
+.food fieldset {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  height: 100%;
+}
+.food fieldset header {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 8px;
+}
+.food fieldset header h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 2.2rem;
+}
+
+.uge {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.uge p {
+  color: #fff200;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.food-list .food-item {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+.food-item.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  animation: bounce 6s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+  95% {
+    transform: translateY(0);
+  }
+}
+.activityContainer {
+  color: white;
+  gap: 4px;
+}
+.activityContainer section {
+  width: 620px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.activityContainer section div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.1fr 1.5fr 0.5fr;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.activityContainer .activityWrapper {
+  background-color: #ffffff;
+  margin: 0 1rem;
+  color: #000000;
+}
+.activityContainer .activityWrapper p {
+  line-height: 10px;
+}
+.activityContainer legend {
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.activityContainer legend img {
+  width: 50px;
+  height: 50px;
+}
+.activityContainer fieldset {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  padding: 0;
+}
+.activityContainer fieldset header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+.activityContainer fieldset header h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.6rem;
+}
+
+.fieldsetSection {
+  background-color: #005543;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.activityTitle p {
+  color: #D9D9D9;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat";
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.background {
+  position: relative;
+}
+.background > img {
+  filter: brightness(25%);
+  width: 100%;
+  display: block;
+}
+
+#App {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.busClock {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=main.css.map */

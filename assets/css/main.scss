@@ -1,2 +1,48 @@
-@import 'variables';
+@use "./variables" as variable;
+@use "../js/modules/Clock/UrView/urView" as urView;
+@use "../js/modules/BusTider/busTiderView/busTiderView" as busTiderView;
+@use "../js/modules/Food/FoodView/foodView" as foodView;
+@use "../js/modules/Activity/activtyView/activtyView" as activtyView;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// font-family: "Montserrat", sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: variable.$black;
+    color: variable.$white;
+    font-family: "Montserrat";
+    overflow: hidden; 
+    background-color: variable.$black;
+}
+
+
+
+.background{
+    position: relative;
+    >img{
+        filter: brightness(25%);    
+        width: 100%;
+        display: block; 
+    }
+}
+#App{
+    position: absolute;
+    top:43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.busClock{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

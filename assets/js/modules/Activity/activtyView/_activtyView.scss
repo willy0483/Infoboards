@@ -1,0 +1,79 @@
+    @use "../../../../css/variables" as variable;
+
+    .activityContainer {
+        color: white;
+        gap: 4px;
+
+        section {
+            width: 620px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;  
+            justify-content: center;
+
+            div {
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr 1.2fr 1.1fr 1.5fr 0.5fr;
+                padding: 0 0.5rem;
+                justify-content: space-between;
+                border-radius: 8px;
+            }
+        }
+
+        .activityWrapper{
+            background-color: variable.$white;
+            margin: 0 1rem;
+            color: variable.$black;
+            p{
+                line-height: 10px;
+            }
+        }
+
+        legend {
+            margin: auto;
+            padding: 0 0.5rem;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        fieldset {
+            border: 2px solid variable.$yellow;
+            border-radius: 8px;   
+            padding: 0;
+
+            header {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                text-align: center;
+                color: variable.$white;
+                padding: 1rem 0;
+                border-radius: 8px;
+
+                h2 {
+                    margin: 0;
+                    font-size: 2.6rem;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .fieldsetSection {
+        background-color: variable.$green-dark;
+        margin: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 8px;
+    }
+
+    .activityTitle{
+        p{
+            color: #D9D9D9;
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+    }
