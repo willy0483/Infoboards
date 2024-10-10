@@ -38,7 +38,7 @@ export default function getData() {
       });
     }, 60000);
   });
-  setInterval(timeDate, 10000);
+  setInterval(timeDate, 5000);
 
   getFood().then((data) => {
     console.log(data);
