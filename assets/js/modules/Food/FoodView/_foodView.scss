@@ -59,7 +59,7 @@
 
 
 .food-item.highlight {
-    background-color: yellow;
+    background-color:  variable.$yellow;
     font-weight: bold; 
     animation: bounce 6s ease infinite;
 }

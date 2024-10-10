@@ -1,27 +1,36 @@
 @use "../../../../css/variables" as variable;
-.busTider{
+
+.busTider {
     display: flex;
     color: variable.$black;
     margin: 0.2rem 0;
-    .stoppeSted{
+    font-weight: 700;
+
+    .stoppeSted {
         width: 100%;
         background-color: variable.$white;
         padding: 0 0 0 1rem;
-        border-radius: 8px 0 0 8px;
+        border-radius: 4px 0 0 4px;
+
     }
-    .anKomst{
+
+    .anKomst {
         text-align: center;
         width: 4rem;
         background-color: variable.$yellow;
-        border-radius: 0px 8px 8px 0px;
+        border-radius: 0px 4px 4px 0px;
         padding-right: 0.2rem;
-    }    
+        width: 80px;
+    }
 }
 
-.bus{
+
+
+.bus {
     legend {
         margin: auto;
         padding: 0 0.5rem;
+
         img {
             width: 50px;
             height: 50px;
@@ -30,8 +39,9 @@
 
     fieldset {
         border: 2px solid variable.$yellow;
-        border-radius: 8px;   
-        header{
+        border-radius: 8px;
+
+        header {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -39,37 +49,44 @@
             background-color: variable.$yellow;
             color: variable.$black;
             padding: 1rem 0;
-            border-radius: 8px;
-            h2{
+            border-radius: 4px;
+
+            h2 {
                 margin: 0;
                 font-size: 1.6rem;
                 line-height: 1.6rem;
             }
-        }     
+        }
     }
 
-    .busContainer{
-        p{
+    .busContainer {
+        p {
             margin: 0.4rem 0;
         }
     }
 
-    .whats-next{
+    .whats-next {
         display: flex;
-        justify-content: center;
-        p{
+        justify-content: center;        
+        p {
             margin-bottom: 0;
-            margin-top: 0;
+            margin-top: .2rem;
+            font-weight: 800;
+            word-spacing: 2px;
+            font-size: 1.2rem;
         }
-        .afgange{
+
+        .afgange {
             color: variable.$yellow;
         }
     }
-    .stoppested-ankomst{
+
+    .stoppested-ankomst {
         display: flex;
         justify-content: space-between;
         margin: 0 0.3rem;
-        p{
+
+        p {
             margin-bottom: 0;
         }
     }
