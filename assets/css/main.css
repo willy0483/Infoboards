@@ -6,20 +6,21 @@
 .clock fieldset {
   width: 100%;
   text-align: center;
-  border: 2px solid #fff200;
+  border: 2px solid #FDF251;
   border-radius: 8px;
   text-align: center;
 }
 .clock fieldset header h2 {
   color: #ffffff;
   margin: 0;
+  font-weight: 900;
   font-size: 3rem;
 }
 .clock fieldset .timeDateContainer {
   padding: 0.5rem 2rem 2.5rem 2rem;
 }
 .clock fieldset .timeDateContainer p {
-  color: #fff200;
+  color: #FDF251;
   margin: 0rem;
 }
 .clock fieldset legend {
@@ -35,19 +36,21 @@
   display: flex;
   color: #000000;
   margin: 0.2rem 0;
+  font-weight: 700;
 }
 .busTider .stoppeSted {
   width: 100%;
   background-color: #ffffff;
   padding: 0 0 0 1rem;
-  border-radius: 8px 0 0 8px;
+  border-radius: 4px 0 0 4px;
 }
 .busTider .anKomst {
   text-align: center;
   width: 4rem;
-  background-color: #fff200;
-  border-radius: 0px 8px 8px 0px;
+  background-color: #FDF251;
+  border-radius: 0px 4px 4px 0px;
   padding-right: 0.2rem;
+  width: 80px;
 }
 
 .bus legend {
@@ -59,7 +62,7 @@
   height: 50px;
 }
 .bus fieldset {
-  border: 2px solid #fff200;
+  border: 2px solid #FDF251;
   border-radius: 8px;
 }
 .bus fieldset header {
@@ -67,10 +70,10 @@
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  background-color: #fff200;
+  background-color: #FDF251;
   color: #000000;
   padding: 1rem 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .bus fieldset header h2 {
   margin: 0;
@@ -86,10 +89,13 @@
 }
 .bus .whats-next p {
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0.2rem;
+  font-weight: 800;
+  word-spacing: 2px;
+  font-size: 1.2rem;
 }
 .bus .whats-next .afgange {
-  color: #fff200;
+  color: #FDF251;
 }
 .bus .stoppested-ankomst {
   display: flex;
@@ -113,7 +119,7 @@
   height: 50px;
 }
 .food fieldset {
-  border: 2px solid #fff200;
+  border: 2px solid #FDF251;
   border-radius: 8px;
   height: 100%;
 }
@@ -136,7 +142,7 @@
   text-align: center;
 }
 .uge p {
-  color: #fff200;
+  color: #FDF251;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 800;
@@ -153,7 +159,7 @@
 }
 
 .food-item.highlight {
-  background-color: yellow;
+  background-color: #FDF251;
   font-weight: bold;
   animation: bounce 6s ease infinite;
 }
@@ -217,8 +223,8 @@
   height: 50px;
 }
 .activityContainer fieldset {
-  border: 2px solid #fff200;
-  border-radius: 8px;
+  border: 2px solid #FDF251;
+  border-radius: 4px;
   padding: 0;
 }
 .activityContainer fieldset header {
@@ -228,7 +234,7 @@
   text-align: center;
   color: #ffffff;
   padding: 1rem 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .activityContainer fieldset header h2 {
   margin: 0;
@@ -238,9 +244,9 @@
 
 .fieldsetSection {
   background-color: #005543;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem;
   padding-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .activityTitle p {
