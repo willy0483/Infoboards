@@ -40,10 +40,9 @@ export default function buildFoodView(foodData) {
     const foodHtml = `
         <section class="${className}">
           <div class="day"><p>${food.DayName}</p></div>
-          <div class="name"><p>${food.Dish.replace("- kr. 35,00", "").replace(
-            "og",
-            "&"
-          )}</p></div>
+          <div class="name"><p>${food.Dish.replace("- kr. 35,00", "")
+            .replace("og", "&")
+            .replace("med", "/")}</p></div>
         </section>
       `;
 
