@@ -1,14 +1,16 @@
 @use "../../../../css/variables" as variable;
 
 .clock {
+    border: 2px solid red;
+    
     display: flex;
     justify-content: center;
     fieldset {
-        width: 100%;
+        width: 100%;        
         text-align: center;
         border: 2px solid variable.$yellow;
         border-radius: 8px;
-        width: fit-content; 
+        // width: fit-content; 
         text-align: center;
         header{
             h2{

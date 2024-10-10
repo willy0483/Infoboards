@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .clock {
+  border: 2px solid red;
   display: flex;
   justify-content: center;
 }
@@ -8,8 +9,6 @@
   text-align: center;
   border: 2px solid #fff200;
   border-radius: 8px;
-  width: -moz-fit-content;
-  width: fit-content;
   text-align: center;
 }
 .clock fieldset header h2 {
@@ -240,7 +239,7 @@
 
 .fieldsetSection {
   background-color: #005543;
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   padding-bottom: 1rem;
   border-radius: 8px;
 }
