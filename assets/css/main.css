@@ -224,7 +224,7 @@
 }
 .activityContainer fieldset {
   border: 2px solid #FDF251;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 0;
 }
 .activityContainer fieldset header {
@@ -234,7 +234,7 @@
   text-align: center;
   color: #ffffff;
   padding: 1rem 0;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .activityContainer fieldset header h2 {
   margin: 0;
@@ -244,9 +244,9 @@
 
 .fieldsetSection {
   background-color: #005543;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem;
   padding-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .activityTitle p {

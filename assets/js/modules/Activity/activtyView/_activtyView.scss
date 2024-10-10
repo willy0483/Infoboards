@@ -42,7 +42,7 @@
 
         fieldset {
             border: 2px solid variable.$yellow;
-            border-radius: 8px;   
+            border-radius: 4px;   
             padding: 0;
 
             header {
@@ -52,7 +52,7 @@
                 text-align: center;
                 color: variable.$white;
                 padding: 1rem 0;
-                border-radius: 8px;
+                border-radius: 4px;
 
                 h2 {
                     margin: 0;
@@ -65,9 +65,9 @@
 
     .fieldsetSection {
         background-color: variable.$green-dark;
-        margin: 1rem 1rem 2rem 1rem;
+        margin: 1rem;
         padding-bottom: 1rem;
-        border-radius: 8px;
+        border-radius: 4px;
     }
 
     .activityTitle{
