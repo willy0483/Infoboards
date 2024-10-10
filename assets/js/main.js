@@ -47,5 +47,5 @@ export default function getData() {
   setInterval(getFood, 7200000);
 
   buildActivty();
-  setInterval(buildActivty, 1800000);
+  setInterval(buildActivty, 1080000);
 }
