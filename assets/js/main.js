@@ -41,7 +41,7 @@ export default function getData() {
   setInterval(timeDate, 5000);
 
   getFood().then((data) => {
-    console.log(data);
+    // console.log(data);
     buildFoodView(data);
   });
   setInterval(getFood, 7200000);

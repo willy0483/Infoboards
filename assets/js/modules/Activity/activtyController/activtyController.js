@@ -11,7 +11,7 @@ import { filterValidActivities } from "../activtyModel/activtyModel.js";
 
 export async function buildActivty() {
   getActivty().then((data) => {
-    console.log(data);
+    // console.log(data);
     let rawActivityData = data;
     let filteredActivityData = filterValidActivities(rawActivityData.value);
     let currentActivityData = filterCurrentActivities(filteredActivityData);
