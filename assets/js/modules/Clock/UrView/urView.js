@@ -12,7 +12,7 @@ export default function buildUrView(
   myMonths,
   year
 ) {
-  console.log(now);
+  // console.log(now);
 
   let myHtml = `
     <fieldset>

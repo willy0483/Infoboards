@@ -25,7 +25,7 @@ export default function busTiderView(busData) {
   const busContainer = busTiderContainer.querySelector(".busContainer");
 
   busData.forEach((bus) => {
-    console.log(bus);
+    // console.log(bus);
     const busHtml = `
       <section class="busTider">
         <div class="stoppeSted"><p>${bus.direction}</p></div>
