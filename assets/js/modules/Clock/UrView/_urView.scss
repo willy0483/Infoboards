@@ -1,8 +1,6 @@
 @use "../../../../css/variables" as variable;
 
-.clock {
-    border: 2px solid red;
-    
+.clock {    
     display: flex;
     justify-content: center;
     fieldset {
