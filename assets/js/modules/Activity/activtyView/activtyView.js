@@ -68,7 +68,8 @@ export const createActivityView = (arr) => {
 
       // Create all the P tags
       let p_room = createElWithText("p", `${element.Room}`);
-      let p_team = createElWithText("p", `${element.Team}`);
+      let p_team = createElWithText("p", `${element.Team.toUpperCase()}`);
+      p_team.classList.add("teamName");
       let p_education = createElWithText("p", `${element.Education}`);
       let p_subject = createElWithText("p", `${element.Subject}`);
       let p_startDate = createElWithText(

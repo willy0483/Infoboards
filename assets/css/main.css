@@ -163,13 +163,13 @@
     transform: translateY(0);
   }
   30% {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
   }
   50% {
     transform: translateY(0);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
   80% {
     transform: translateY(0);
@@ -247,6 +247,10 @@
   color: #D9D9D9;
   margin-bottom: 0;
   font-size: 1.1rem;
+}
+
+.teamName {
+  font-weight: bold;
 }
 
 * {
