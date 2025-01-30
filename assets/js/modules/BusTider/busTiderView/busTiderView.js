@@ -1,7 +1,7 @@
 export let busTiderContainer = document.createElement("section");
 busTiderContainer.classList.add("bus");
 
-export default function busTiderView(busData) {
+export default function busTiderView(busData, error) {
   busTiderContainer.innerHTML = "";
 
   const mainHtml = `
